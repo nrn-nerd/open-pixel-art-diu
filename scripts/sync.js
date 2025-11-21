@@ -29,17 +29,17 @@ async function run() {
   spinner.text = 'Getting current branch';
   const currentBranch = await getBranch();
 
-  spinner.text = 'Checking if remote "twilio-labs" is configured';
+  spinner.text = 'Checking if remote "diu-sec" is configured';
   const { stdout: remotes } = await exec('git remote', opts);
   const twilioLabsRemoteExists = remotes
     .split(os.EOL)
     .map(trim)
-    .includes('twilio-labs');
+    .includes('diu-sec');
 
   if (!twilioLabsRemoteExists) {
-    spinner.text = 'Configuring "twilio-labs" remote';
+    spinner.text = 'Configuring "diu-sec" remote';
     await exec(
-      'git remote add twilio-labs https://github.com/diu-sec/open-pixel-art-diu.git',
+      'git remote add diu-sec https://github.com/diu-sec/open-pixel-art-diu.git',
       opts
     );
   }
@@ -48,7 +48,7 @@ async function run() {
   await exec('git checkout master', opts);
 
   spinner.text = 'Pulling latest changes for master';
-  await exec('git pull twilio-labs master', opts);
+  await exec('git pull diu-sec master', opts);
 
   spinner.text = 'Pushing changes up to your fork (origin)';
   await exec('git push origin master', opts);
