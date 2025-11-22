@@ -2,6 +2,7 @@
   "data": [
     {"y": 0, "x": 0, "color": "#ff9900", "username": "scottmwalton"},
     {"y": 1, "x": 1, "color": "#ff9900", "username": "labnann"},
+    {"y": 10, "x": 10, "color": "#00FF00", "username": "nrn-nerd"},
     {"y": 39, "x": 36, "color": "#00BBEE", "username": "resjadMajumder"},
     {"y": 49, "x": 55, "color": "#ff12c2", "username": "marvmn"},
     {"y": 59, "x": 50, "color": "#FFC0CB", "username": "Tony-Rome"},
@@ -10,9 +11,8 @@
     {"y": 59, "x": 53, "color": "#deadbe", "username": "liropa"},
     {"y": 59, "x": 57, "color": "#36FF00", "username": "poecilonym"},
     {"y": 59, "x": 58, "color": "#ccff00", "username": "TheLaz"},
-    {"y": 59, "x": 59, "color": "#fc03be", "username": "hjpunzalan"},
+    {"y": 59, "x": 59, "color": "#fc03be", "username": "hjpunzalan"}
 
-    {"y": 59, "x": 56, "color": "#00FF00", "username": "nrn-nerd"}
 
   ]
 }
